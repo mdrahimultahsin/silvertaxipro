@@ -1,0 +1,23 @@
+import {StrictMode} from "react";
+import {createRoot} from "react-dom/client";
+import "./index.css";
+import {RouterProvider} from "react-router";
+import router from "./routes/router.jsx";
+import {HelmetProvider} from "@dr.pogodin/react-helmet";
+import { LoadScript } from "@react-google-maps/api";
+import Loading from "./components/shared/Loading.jsx";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+       <LoadScript
+      googleMapsApiKey={import.meta.env.VITE_maps_api_key}
+      libraries={["places"]}
+      loadingElement={<Loading />}
+      >
+      <HelmetProvider>
+
+      <RouterProvider router={router}></RouterProvider>
+    </HelmetProvider>
+    </LoadScript>
+  </StrictMode>,
+);

@@ -1,0 +1,130 @@
+import {Link, useNavigate} from "react-router";
+import {FaBusinessTime, FaCar, FaPlane, FaUsers} from "react-icons/fa";
+import {IoMenu} from "react-icons/io5";
+import {FaXmark} from "react-icons/fa6";
+import ButtonSecondary from "./shared/ButtonSecondary";
+import Container from "./shared/Container";
+
+const MidHeader = ({isMenuOpen, setIsMenuOpen}) => {
+  const navigate = useNavigate();
+  return (
+    <div className="py-2 shadow-md bg-white">
+      <Container>
+        <div className="flex justify-between">
+          {/* Logo */}
+          <div>
+            <Link>
+              <img
+                className="w-28 md:w-40"
+                src="/logo.png"
+                alt="Silver Taxi Pro logo"
+              />
+              {/* <h2 className="font-bold text-2xl leading-10"> SilverTaxiPro</h2> */}
+            </Link>
+          </div>
+          {/* Center Icons */}
+          <div className="hidden lg:flex items-center gap-6">
+            <Link
+              to={`/services/sydney-cbd-transfer`}
+              className="flex gap-2 items-center"
+            >
+              {/* Icon */}
+              <div>
+                <FaUsers
+                  size={45}
+                  className="text-primary hover:text-secondary"
+                />
+              </div>
+              {/* Text */}
+              <div>
+                <p className="font-bold text-sm">Maxi Taxi</p>
+                <p className="text-xs">Available on notice</p>
+              </div>
+            </Link>
+            <Link
+              to="/services/book-taxi-sydney-airport"
+              className="flex gap-2 items-center"
+            >
+              {/* Icon */}
+              <div>
+                <FaPlane
+                  size={45}
+                  className="text-primary hover:text-secondary"
+                />
+              </div>
+              {/* Text */}
+              <div>
+                <p className="font-bold text-sm">Airport Transfers</p>
+                <p className="text-xs">No hidden charge</p>
+              </div>
+            </Link>
+            <Link
+              to="/services/wedding-transfer"
+              className="flex gap-4 items-center"
+            >
+              {/* Icon */}
+              <div>
+                <FaCar
+                  size={45}
+                  className="text-primary hover:text-secondary"
+                />
+              </div>
+              {/* Text */}
+              <div>
+                <p className="font-bold text-sm">Wedding Transfers</p>
+                <p className="text-xs">No hidden charge</p>
+              </div>
+            </Link>
+            <Link
+              to="/services/corporate-tips"
+              className="flex gap-4 items-center"
+            >
+              {/* Icon */}
+              <div>
+                <FaBusinessTime
+                  size={45}
+                  className="text-primary hover:text-secondary"
+                />
+              </div>
+              {/* Text */}
+              <div>
+                <p className="font-bold text-sm">Corporate Transfers</p>
+                <p className="text-xs">Available on short notice</p>
+              </div>
+            </Link>
+          </div>
+          <div className="flex items-center gap-4">
+            <ButtonSecondary
+              onClick={() => {
+                navigate("/book-a-taxi");
+              }}
+              className={"text-sm! md:text-base"}
+            >
+              Book Online
+            </ButtonSecondary>
+            <button
+              aria-label="Menu Button"
+              className="md:hidden  border-gray-500 bg-primary text-black px-2 py-1 rounded"
+            >
+              {isMenuOpen ? (
+                <FaXmark
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  size={30}
+                  className="cursor-pointer"
+                />
+              ) : (
+                <IoMenu
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  size={30}
+                  className="cursor-pointer"
+                />
+              )}
+            </button>
+          </div>
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+export default MidHeader;
