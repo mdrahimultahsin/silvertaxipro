@@ -84,15 +84,15 @@ const SydneyCBDTransfer = () => {
   return (
     <div>
       {useSEO({
-        title: "Silver Service Taxi Sydney | Premium Cabs From Liverpool",
+        title: "Premium Sydney CBD Transfer | Premium Cabs From Liverpool",
         description:
-          "Travel in comfort with silver service taxi sydney, with clean late-model cars, courteous drivers and quiet journeys from Liverpool. Book online today.",
+          "Silver Taxi Pro delivers premium Sydney CBD Transfer across metropolitan regions with guaranteed punctuality. Our silver service taxi Sydney fleet serves business professionals and families throughout Liverpool, Macarthur, and Sydney CBD.Every taxi service Sydney booking includes professional drivers and immaculate vehicles. Available 24/7 for airport transfers,corporate travel, and local transportation across NSW.",
         keywords:
           "taxi Liverpool,silver service taxi sydney,maxi taxi sydney,maxi taxi cabs sydney,taxi service sydney,taxi sydney airport",
         canonical: "https://silvertaxipro.com.au/services/sydney-cbd-transfer",
       })}
       <PagesHero
-        title={` Premium Silver Service Taxi Sydney`}
+        title={` Premium Sydney CBD Transfer`}
         description={`    Silver Taxi Pro delivers premium Sydney CBD Transfer
                 across metropolitan regions with guaranteed punctuality. Our
                 silver service taxi Sydney fleet serves business professionals

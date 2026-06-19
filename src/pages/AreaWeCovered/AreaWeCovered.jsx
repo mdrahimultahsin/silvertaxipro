@@ -6,6 +6,7 @@ import QuickLinks from "./QuickLinks";
 import {useNavigate} from "react-router";
 import {serviceAreasData} from "../../utils/serviceArea";
 import PagesHero from "../../components/shared/PagesHero";
+import useSEO from "../../hooks/useSEO";
 
 const AreaCovered = () => {
   const navigate = useNavigate();
@@ -42,6 +43,15 @@ const AreaCovered = () => {
 
   return (
     <>
+      {useSEO({
+        title:
+          "Areas We Cover – Silver Taxi Pro Sydney, Campbelltown & Surroundings",
+        description:
+          "Silver Taxi Pro proudly provides reliable taxi services across Sydney, Campbelltown, and surrounding suburbs. We offer fast airport transfers, local rides, and corporate travel in all major residential, business, and airport zones. Check our full service coverage areas and book your ride anywhere in our network.",
+        keywords:
+          "areas covered silver taxi pro, taxi service areas sydney, campbelltown taxi coverage, sydney taxi service areas, airport taxi sydney suburbs, taxi near me sydney, cab service areas australia, silver taxi service locations, local taxi areas campbelltown, sydney transport coverage, taxi service near sydney airport, western sydney taxi service, south west sydney taxi, reliable taxi areas nsw, taxi booking coverage australia",
+        canonical: "https://silvertaxipro.com.au/area-covered",
+      })}
       <div className="pb-15">
         <PagesHero
           title={`Service Areas We Cover`}

@@ -13,6 +13,7 @@ import Container from "../../components/shared/Container";
 import Faq from "../../components/shared/Faq";
 import PagesHero from "../../components/shared/PagesHero";
 import React from "react";
+import useSEO from "../../hooks/useSEO";
 const BookingForm = React.lazy(
   () => import("../../components/shared/BookingForm"),
 );
@@ -80,6 +81,13 @@ const BookATaxi = () => {
   ];
   return (
     <div>
+       {useSEO({
+        title: "Book a Taxi Cab Online – Silver Taxi Pro Sydney & Campbelltown",
+        description:
+          "Book your taxi cab online with Silver Taxi Pro for fast, easy, and reliable transportation across Sydney, Campbelltown, and nearby areas. Enjoy safe airport transfers, local rides, and corporate travel with professional drivers and affordable fares. Reserve your cab in seconds and travel stress-free.",
+        keywords: "book a taxi cab, taxi booking sydney, cab booking sydney, online taxi booking, silver taxi booking, campbelltown taxi booking, sydney cab service, airport taxi booking sydney, book cab online australia, fast taxi booking, affordable cab sydney, professional taxi booking service, luxury taxi booking sydney, taxi reservation sydney, instant taxi booking app, cab service campbelltown",
+        canonical: "https://silvertaxipro.com.au/book-a-taxi",
+      })}
       <PagesHero
         title={`  Fast and Easy Taxi Booking in Sydney and Suburbs`}
         description={`  Silver Taxi Pro offers safe and reliable travel across
