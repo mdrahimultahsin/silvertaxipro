@@ -132,8 +132,8 @@ Flight No: ${formData.flightNo || ""}
     <section className={` z-55  ${className}`}>
       <Container className={`px-0!`}>
         <div className="bg-white text-black pt-6 pb-6 rounded-md">
-          <h1 className="section-title text-black! text-left!  pl-8 flex items-center gap-2 ">
-            <FaCalendarAlt className="text-primary!" />{" "}
+          <h1 className="section-title text-black! text-left!  pl-8 flex items-center gap-2 text-xl! sm:text-2xl! md:text-4xl! ">
+            <FaCalendarAlt size={25} className="text-primary!" />{" "}
             {params ? params : formTitle ? formTitle : "Book Your Ride"}
           </h1>
           <form onSubmit={handleSubmit} className=" px-7 pt-0 ">

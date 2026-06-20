@@ -107,7 +107,7 @@ const Footer = () => {
 
   const [showServiceAreas, setShowServiceAreas] = useState(false);
   const [showServices, setShowServices] = useState(false);
-  
+  const [showContact, setShowContact] = useState(false);
   const serviceAreas = serviceAreasData;
 
   return (
@@ -344,62 +344,153 @@ const Footer = () => {
   )}
 </div>
 
-          {/* contact information */}
-          <div>
-            <h2 className="font-bold font-playfair flex gap-2 items-center uppercase text-xl text-primary">
-              <FaPhone /> Contact
-            </h2>
-            <div>
-              <ul className="mt-5 space-y-3">
-                <li className="flex items-center gap-2">
-                  <a
-                    href="https://maps.app.goo.gl/9ZzwaiZkmfLdusak9?g_st=ic"
-                    target="_blank"
-                    className="hover:underline flex items-center gap-2 text-accent"
-                  >
-                    <FaLocationDot className="text-primary" size={20} /> Liverpool-parramatta Transitway 
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <a
-                    href="mailto:Silvertaxipro1@gmail.com"
-                    className="hover:underline flex items-center gap-2 break-all text-accent"
-                  >
-                    <MdOutlineMailOutline className="text-primary" size={20} />
-                    Silvertaxipro1@gmail.com
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="tel:1300788313"
-                    className="flex items-center gap-2 text-accent"
-                  >
-                    <FaPhone className="text-primary" size={20} /> 1300 788 313
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://wa.me/0489181919"
-                    className="flex items-center gap-2 text-accent"
-                    target="blank"
-                  >
-                    <IoLogoWhatsapp className="text-primary" size={20} /> 048
-                    918 1919
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="sms:+0489181919"
-                    className="flex items-center gap-2 text-accent"
-                    target="blank"
-                  >
-                    <MdOutlineMessage className="text-primary" size={20} /> Send
-                    Message
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          {/* Contact information */}
+<div>
+  {/* Desktop Contact Title */}
+  <h2 className="hidden md:flex font-bold font-playfair gap-2 items-center uppercase text-xl text-primary">
+    <FaPhone /> Contact
+  </h2>
+
+  {/* Mobile Contact Dropdown Button */}
+  <button
+    type="button"
+    onClick={() => setShowContact(!showContact)}
+    className="md:hidden w-full font-bold font-playfair flex justify-between gap-2 items-center uppercase text-xl mb-3 text-primary"
+  >
+    <span className="flex items-center gap-2">
+      <FaPhone /> Contact
+    </span>
+
+    <span className="text-2xl">
+      {showContact ? <FaChevronUp /> : <FaChevronDown />}
+    </span>
+  </button>
+
+  {/* Desktop Contact Details */}
+  <div className="hidden md:block">
+    <ul className="mt-5 space-y-3">
+      <li className="flex items-center gap-2">
+        <a
+          href="https://maps.app.goo.gl/9ZzwaiZkmfLdusak9?g_st=ic"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline flex items-center gap-2 text-accent"
+        >
+          <FaLocationDot className="text-primary" size={20} />
+          Liverpool-Parramatta Transitway
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="mailto:Silvertaxipro1@gmail.com"
+          className="hover:underline flex items-center gap-2 break-all text-accent"
+        >
+          <MdOutlineMailOutline className="text-primary" size={20} />
+          Silvertaxipro1@gmail.com
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="tel:1300788313"
+          className="flex items-center gap-2 text-accent"
+        >
+          <FaPhone className="text-primary" size={20} />
+          1300 788 313
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://wa.me/61489181919"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-accent"
+        >
+          <IoLogoWhatsapp className="text-primary" size={20} />
+          048 918 1919
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="sms:0489181919"
+          className="flex items-center gap-2 text-accent"
+        >
+          <MdOutlineMessage className="text-primary" size={20} />
+          Send Message
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  {/* Mobile Contact Dropdown Details */}
+  {showContact && (
+    <div className="md:hidden mt-3">
+      <ul className="space-y-3">
+        <li className="flex items-center gap-2">
+          <a
+            href="https://maps.app.goo.gl/9ZzwaiZkmfLdusak9?g_st=ic"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setShowContact(false)}
+            className="hover:underline flex items-center gap-2 text-accent"
+          >
+            <FaLocationDot className="text-primary" size={20} />
+            Liverpool-Parramatta Transitway
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="mailto:Silvertaxipro1@gmail.com"
+            onClick={() => setShowContact(false)}
+            className="hover:underline flex items-center gap-2 break-all text-accent"
+          >
+            <MdOutlineMailOutline className="text-primary" size={20} />
+            Silvertaxipro1@gmail.com
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="tel:1300788313"
+            onClick={() => setShowContact(false)}
+            className="flex items-center gap-2 text-accent"
+          >
+            <FaPhone className="text-primary" size={20} />
+            1300 788 313
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://wa.me/61489181919"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setShowContact(false)}
+            className="flex items-center gap-2 text-accent"
+          >
+            <IoLogoWhatsapp className="text-primary" size={20} />
+            048 918 1919
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="sms:0489181919"
+            onClick={() => setShowContact(false)}
+            className="flex items-center gap-2 text-accent"
+          >
+            <MdOutlineMessage className="text-primary" size={20} />
+            Send Message
+          </a>
+        </li>
+      </ul>
+    </div>
+  )}
+</div>
         </div>
 
       
