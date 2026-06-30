@@ -45,7 +45,7 @@ const AreaCovered = () => {
     <>
       {useSEO({
         title:
-          "Areas We Cover – Silver Taxi Pro Sydney, Campbelltown & Surroundings",
+          "Areas We Cover – Silver Taxi Pro Sydney, Serving Sydney Southwest, Liverpool and surrounding areas",
         description:
           "Silver Taxi Pro proudly provides reliable taxi services across Sydney, Campbelltown, and surrounding suburbs. We offer fast airport transfers, local rides, and corporate travel in all major residential, business, and airport zones. Check our full service coverage areas and book your ride anywhere in our network.",
         keywords:

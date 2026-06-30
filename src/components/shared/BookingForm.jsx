@@ -131,8 +131,8 @@ Flight No: ${formData.flightNo || ""}
   return (
     <section className={` z-55  ${className}`}>
       <Container className={`px-0!`}>
-        <div className="bg-white text-black pt-6 pb-6 rounded-md">
-          <h1 className="section-title text-black! text-left!  pl-8 flex items-center gap-2 text-xl! sm:text-2xl! md:text-4xl! ">
+        <div className="bg-white text-black pt-6 pb-4 md:pb-6 rounded-md">
+          <h1 className="section-title mb-3! md:mb-6! text-black! text-left!  pl-6 md:pl-8 flex items-center gap-2 text-xl! sm:text-2xl! md:text-4xl! ">
             <FaCalendarAlt size={25} className="text-primary!" />{" "}
             {params ? params : formTitle ? formTitle : "Book Your Ride"}
           </h1>
@@ -152,7 +152,7 @@ Flight No: ${formData.flightNo || ""}
                     onChange={handleInputChange}
                     className="w-4 h-4 text-primary"
                   />
-                  <span className="font-bold capitalize ">
+                  <span className="font-bold capitalize text-sm md:text-base">
                     {type === "anywhere"
                       ? "🚖 Pickup from Anywhere in Sydney"
                       : "✈️ Pickup from Sydney Airport"}

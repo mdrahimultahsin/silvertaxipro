@@ -66,7 +66,7 @@ const HomePage = () => {
                  {useSEO({
         title: "Silver Taxi Pro – Premium Taxi Service in Sydney & Campbelltown",
         description:
-          "Professional and reliable taxi service with Silver Taxi Pro. Serving Sydney, Campbelltown & surrounding areas with fast, comfortable, and affordable rides. Book your ride today for airport transfers, corporate travel, and local trips.",
+          "Professional and reliable taxi service with Silver Taxi Pro. Serving Sydney Southwest, Liverpool, Campbelltown, Camden, Wollondilly Shire, and surrounding areas with fast, comfortable, and affordable rides. Book your ride today for airport transfers, corporate travel, and local trips.",
         keywords: "silver taxi pro, silver taxi, taxi sydney, taxi campbelltown, taxi campbelltown nsw, sydney taxi service, campbelltown taxi service, airport taxi sydney, luxury taxi sydney, taxi booking sydney, professional taxi service, affordable taxi sydney, campbelltown taxis",
         canonical: "https://silvertaxipro.com.au/",
       })}
