@@ -8,7 +8,7 @@ import BookingForm from "../../components/shared/BookingForm";
 const Hero = () => {
   return (
     <section
-      className="w-full bg-no-repeat bg-bottom-right bg-cover "
+      className="w-full bg-no-repeat bg-cover bg-position-[38%_25%] md:bg-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Overlay */}
