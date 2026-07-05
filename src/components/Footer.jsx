@@ -403,7 +403,7 @@ const Footer = () => {
 
       <li>
         <a
-          href="https://wa.me/61489181919"
+          href="https://wa.me/message/MMQTXS357NTFB1"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-accent"
@@ -466,7 +466,7 @@ const Footer = () => {
 
         <li>
           <a
-            href="https://wa.me/61489181919"
+            href="https://wa.me/message/MMQTXS357NTFB1"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setShowContact(false)}

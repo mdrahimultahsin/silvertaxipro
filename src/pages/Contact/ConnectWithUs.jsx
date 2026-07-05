@@ -18,7 +18,7 @@ const ConnectWithUs = () => {
       value: "Message us on WhatsApp",
       subtext: "Fastest response",
       Icon: FaWhatsapp,
-      href: "https://wa.me/0489181919",
+      href: "https://wa.me/message/MMQTXS357NTFB1",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const ConnectWithUs = () => {
       value: "Silvertaxipro1@gmail.com",
       subtext: "For booking confirmations",
       Icon: MdEmail,
-      href: "mailto:Silvertaxipro1@gmail.com",
+      href: "mailto:silvertaxipro1@gmail.com",
     },
     {
       id: 4,

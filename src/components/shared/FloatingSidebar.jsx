@@ -9,7 +9,7 @@ const FloatingSidebar = () => {
     <div className="z-50 fixed top-75 md:top-75 left-0 flex flex-col">
       {/* WhatsApp */}
       <a
-        href="https://wa.me/0489181919"
+        href="https://wa.me/message/MMQTXS357NTFB1"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
@@ -29,7 +29,7 @@ const FloatingSidebar = () => {
 
       {/* Email */}
       <a
-        href="mailto:Silvertaxipro1@gmail.com"
+        href="mailto:silvertaxipro1@gmail.com"
         aria-label="Send email"
         className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-[#EA8A35] text-white cursor-pointer transition-all duration-300 hover:w-16 hover:rounded-r-md"
       >
