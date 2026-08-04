@@ -31,10 +31,10 @@ const ConnectWithUs = () => {
     {
       id: 4,
       title: "ADDRESS",
-      value: "Liverpool-Parramatta Transitway",
-      subtext: "Liverpool NSW 2170, Australia",
+      value: "Menangle Rd, Campbelltown NSW",
+      subtext: "Menangle Rd, Campbelltown NSW 2560, Australia",
       Icon: FaLocationDot,
-      href: "https://maps.app.goo.gl/9ZzwaiZkmfLdusak9?g_st=ic",
+      href: "https://share.google/bXOCOvmd3wsdOlTfJ",
     },
   ];
 
