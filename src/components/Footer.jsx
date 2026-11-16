@@ -386,11 +386,11 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="tel:1300788313"
+                    href="tel:1300880748"
                     className="flex items-center gap-2 text-accent"
                   >
                     <FaPhone className="text-primary" size={20} />
-                    1300 788 313
+                    1300 880 748
                   </a>
                 </li>
 
@@ -451,12 +451,12 @@ const Footer = () => {
 
                   <li>
                     <a
-                      href="tel:1300788313"
+                      href="tel:1300880748"
                       onClick={() => setShowContact(false)}
                       className="flex items-center gap-2 text-accent"
                     >
                       <FaPhone className="text-primary" size={20} />
-                      1300 788 313
+                      1300 880 748
                     </a>
                   </li>
 

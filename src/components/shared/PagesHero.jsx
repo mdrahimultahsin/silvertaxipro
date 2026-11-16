@@ -52,9 +52,9 @@ const PagesHero = ({title, description}) => {
                   Book Online
                 </ButtonPrimary>
               </Link>
-              <a href="tel:1300788313">
+              <a href="tel:1300880748">
                 <ButtonSecondary className="flex gap-2 items-center justify-center bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-secondary transition-all duration-300 px-6 py-3 rounded-lg font-semibold w-full sm:w-auto">
-                  <IoCallSharp /> 1300 788 313
+                  <IoCallSharp /> 1300 880 748
                 </ButtonSecondary>
               </a>
             </div>

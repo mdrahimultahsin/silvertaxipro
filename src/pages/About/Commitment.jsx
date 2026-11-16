@@ -190,7 +190,7 @@ const Commitment = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:1300788313" className="">
+            <a href="tel:1300880748" className="">
               <ButtonSecondary
                 className={`flex justify-between! gap-2 items-center`}
               >

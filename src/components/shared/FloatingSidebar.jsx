@@ -20,7 +20,7 @@ const FloatingSidebar = () => {
 
       {/* Phone */}
       <a
-        href="tel:1300788313"
+        href="tel:1300880748"
         aria-label="Call us"
         className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white text-black hover:bg-secondary hover:text-white cursor-pointer transition-all duration-300 hover:w-16 hover:rounded-r-md"
       >

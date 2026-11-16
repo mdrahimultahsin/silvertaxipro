@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "How Quickly Can I Book A Taxi Sydney For Immediate Pickup?",
     answer:
-      "Call 1300 788 313 for instant taxi Sydney dispatch. Our average response time is nine minutes across Liverpool and the Sydney metropolitan areas. Online booking is also available for immediate requests, with SMS confirmation sent within two minutes of reservation.",
+      "Call 1300 880 748 for instant taxi Sydney dispatch. Our average response time is nine minutes across Liverpool and the Sydney metropolitan areas. Online booking is also available for immediate requests, with SMS confirmation sent within two minutes of reservation.",
   },
   {
     question:
@@ -351,7 +351,7 @@ const SydneyCBDTransfer = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:1300788313"
+                href="tel:1300880748"
                 className="bg-primary text-black px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-2"
               >
                 <FaPhoneAlt />

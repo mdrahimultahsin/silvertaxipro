@@ -94,7 +94,7 @@ const CorporateTips = () => {
       {useSEO({
         title: "Corporate Taxi Services Sydney | 24/7 Taxi Service",
         description:
-          "Book luxury airport transfers with Silver Taxi Pro. Enjoy a hassle-free airport taxi service. Call ☎️ 1300 788 313 to book your airport taxi transfer now!",
+          "Book luxury airport transfers with Silver Taxi Pro. Enjoy a hassle-free airport taxi service. Call ☎️ 1300 880 748 to book your airport taxi transfer now!",
         keywords:
           "Corporate Taxi Services Sydney, corporate taxi services Liverpool",
         canonical: "https://silvertaxipro.com.au/services/corporate-tips",
@@ -357,7 +357,7 @@ const CorporateTips = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:1300788313"
+                href="tel:1300880748"
                 className="bg-primary text-black px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-2"
               >
                 <FaPhoneAlt />

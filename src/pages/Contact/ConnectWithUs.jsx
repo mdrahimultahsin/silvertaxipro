@@ -7,10 +7,10 @@ const ConnectWithUs = () => {
     {
       id: 1,
       title: "PHONE",
-      value: "1300 788 313",
+      value: "1300 880 748",
       subtext: "Call anytime — 24/7",
       Icon: IoCallSharp,
-      href: "tel:1300788313",
+      href: "tel:1300880748",
     },
     {
       id: 2,

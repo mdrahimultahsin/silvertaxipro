@@ -45,9 +45,9 @@ const TopHeader = () => {
 
           <a
             className="text-2xl md:text-lg  font-bold text-shadow-sm flex items-center gap-2 cursor-pointer hover:underline"
-            href="tel:1300788313"
+            href="tel:1300880748"
           >
-            <FaPhoneAlt /> 1300 788 313
+            <FaPhoneAlt /> 1300 880 748
           </a>
         </div>
       </Container>
